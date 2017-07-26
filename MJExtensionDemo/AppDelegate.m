@@ -20,6 +20,7 @@
     
     NSLog(@"语言 : \n%@",  [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"]);
     
+    [[LanguageManager sharedInstance] changeNowLanguage];
     return YES;
     
 }

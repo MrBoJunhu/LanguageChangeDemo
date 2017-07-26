@@ -79,8 +79,8 @@
     return NSLocalizedStringFromTable(key, table, @"");
 }
 
--(void)changeNowLanguage
-{
+-(void)changeNowLanguage {
+    
     if ([self.language isEqualToString:EN])
     {
         [self setNewLanguage:CNS];
@@ -129,13 +129,15 @@
     
     UINavigationController *rootNav = [storyBoard instantiateViewControllerWithIdentifier:@"rootnav"];
     
+    rootNav.tabBarItem.title = FGGetStringWithKeyFromTable(k_HomePage, k_BB_Table1);
+    
     UINavigationController *personNav = [storyBoard instantiateViewControllerWithIdentifier:@"personnav"];
+    
+    personNav.tabBarItem.title = FGGetStringWithKeyFromTable(k_Mine, k_BB_Table1);
     
     UITabBarController *tabVC = (UITabBarController*)appDelegate.window.rootViewController;
     
     tabVC.viewControllers = @[rootNav,personNav];
-    
-    [self postChangedLanguage];
     
 }
 
