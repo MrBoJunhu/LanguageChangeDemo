@@ -71,12 +71,13 @@
     [self changeTitle];
    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeTitle) name:APPLANGUAGE_CHANGED object:nil];
+    
 }
 
 
 - (void)changeTitle {
     
-    self.title = FGGetStringWithKeyFromTable(k_HomePage, @"BB");
+    self.title = FGGetStringWithKeyFromTable(k_HomePage, k_BB_Table1);
 
 }
 
@@ -85,7 +86,7 @@
     
     @weakify(self);
 
-    [ShowMessageObject showMessageWithController:self Title:@"国际化文件路径" message:@"请选择您需要切换的语言文件" style:UIAlertControllerStyleActionSheet cancelStyle:UIAlertActionStyleCancel actionTitles:@[@"Localizable",@"BB"] cancelTitle:@"取消" clickChooseAction:^(NSUInteger index) {
+    [ShowMessageObject showMessageWithController:self Title:@"国际化文件路径" message:@"请选择您需要切换的语言文件" style:UIAlertControllerStyleActionSheet cancelStyle:UIAlertActionStyleCancel actionTitles:@[@"Localizable",k_BB_Table1] cancelTitle:@"取消" clickChooseAction:^(NSUInteger index) {
       
         switch (index) {
             case 0:
@@ -116,23 +117,23 @@
     
     self.photoImageView.image = [UIImage imageNamed:NSLocalizedString(k_TestImage, nil)];
     
-    [self.addBtn setTitle:FGGetStringWithKeyFromTable(k_Addnotification, @"BB") forState:UIControlStateNormal];
+    [self.addBtn setTitle:FGGetStringWithKeyFromTable(k_Addnotification, k_BB_Table1) forState:UIControlStateNormal];
     
-    [self.removeBtn setTitle:FGGetStringWithKeyFromTable(k_RemoveNotifications, @"BB") forState:UIControlStateNormal ];
+    [self.removeBtn setTitle:FGGetStringWithKeyFromTable(k_RemoveNotifications, k_BB_Table1) forState:UIControlStateNormal ];
     
-    [self.testBtn setTitle:FGGetStringWithKeyFromTable(k_Internationalization, @"BB") forState:UIControlStateNormal];
+    [self.testBtn setTitle:FGGetStringWithKeyFromTable(k_Internationalization, k_BB_Table1) forState:UIControlStateNormal];
     
 }
 
 
 - (void)newLocalizable {
     
-    self.photoImageView.image = [UIImage imageNamed:NSLocalizedStringFromTable(k_TestImage, @"BB", nil)];
+    self.photoImageView.image = [UIImage imageNamed:NSLocalizedStringFromTable(k_TestImage, k_BB_Table1, nil)];
     
-    [self.addBtn setTitle:NSLocalizedStringFromTable(k_Addnotification, @"BB", nil) forState:UIControlStateNormal];
+    [self.addBtn setTitle:NSLocalizedStringFromTable(k_Addnotification, k_BB_Table1, nil) forState:UIControlStateNormal];
     
     
-    [self.removeBtn setTitle:NSLocalizedStringFromTable(k_RemoveNotifications, @"BB", nil) forState:UIControlStateNormal];
+    [self.removeBtn setTitle:NSLocalizedStringFromTable(k_RemoveNotifications, k_BB_Table1, nil) forState:UIControlStateNormal];
 
 }
 

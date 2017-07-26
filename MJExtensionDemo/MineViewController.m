@@ -10,6 +10,8 @@
 
 @interface MineViewController ()
 
+@property (nonatomic, strong) UIBarButtonItem *rightBarButtonItem;
+
 @end
 
 @implementation MineViewController
@@ -32,21 +34,31 @@
 
 - (void)changedLanguage {
   
-    self.title = FGGetStringWithKeyFromTable(k_Mine, @"BB");
+    self.title = FGGetStringWithKeyFromTable(k_Mine, k_BB_Table1);
     
-    UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:k_ExchangeLanguage style:UIBarButtonItemStylePlain target:self action:@selector(changeLg)];
+    NSString *rightItemTitle = FGGetStringWithKeyFromTable(k_ExchangeLanguage, k_BB_Table1);
     
-    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
+   self.rightBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:rightItemTitle style:UIBarButtonItemStylePlain target:self action:@selector(changeLg)];
+    
+    self.navigationItem.rightBarButtonItem = self.rightBarButtonItem;
 
 }
 
-
-
 - (void)changeLg {
  
-    NSArray *languageArray = @[@"中文", @"日文",@"英语"];
+    NSString *chinese = FGGetStringWithKeyFromTable(k_Chinese, k_BB_Table1);
     
-    [ShowMessageObject showMessageWithController:self Title:@"切换语言" message:@"" style:UIAlertControllerStyleActionSheet cancelStyle:UIAlertActionStyleCancel actionTitles:languageArray cancelTitle:@"取消" clickChooseAction:^(NSUInteger index) {
+    NSString *english = FGGetStringWithKeyFromTable(k_English, k_BB_Table1);
+    
+    NSString *japanese = FGGetStringWithKeyFromTable(k_Japanese, k_BB_Table1);
+    
+    NSString *cancelString = FGGetStringWithKeyFromTable(k_Cancel, k_BB_Table1);
+    
+    NSString *titleString = FGGetStringWithKeyFromTable(k_ExchangeLanguage, k_BB_Table1);
+    
+    NSArray *languageArray = @[chinese, japanese,english];
+    
+    [ShowMessageObject showMessageWithController:self Title:titleString message:@"" style:UIAlertControllerStyleActionSheet cancelStyle:UIAlertActionStyleCancel actionTitles:languageArray cancelTitle:cancelString clickChooseAction:^(NSUInteger index) {
         
         switch (index) {
             case 0:

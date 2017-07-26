@@ -9,6 +9,7 @@
 #ifndef InternationalizationFile_h
 #define InternationalizationFile_h
 
+#define k_BB_Table1 @"BB"
 
 #define  k_Addnotification @"Add notification"
 
@@ -23,5 +24,14 @@
 #define k_Mine @"My"
 
 #define k_ExchangeLanguage @"switch language"
+
+#define k_Chinese @"Chinese"
+
+#define k_English @"English"
+
+#define k_Japanese @"Japanese"
+
+#define k_Cancel @"Cancel"
+
 
 #endif

@@ -10,6 +10,8 @@
 
 #import "AppDelegate.h"
 
+#define LANGUAGE_FILE_TYPE @"lproj"
+
 @interface LanguageManager()
 
 @property (nonatomic, copy) NSString *language;
@@ -52,14 +54,15 @@
 
 -(void)initLanguage
 {
-    NSString *tmp = [[NSUserDefaults standardUserDefaults]objectForKey:LANGUAGE_SET];
+    NSString *tmp = [[NSUserDefaults standardUserDefaults] objectForKey:LANGUAGE_SET];
+    
     NSString *path;
+    
     //默认是中文
     if (!tmp)
     {
         tmp = CNS;
-    }
-    else
+    } else
     {
         tmp = EN;
     }
@@ -79,8 +82,8 @@
     return NSLocalizedStringFromTable(key, table, @"");
 }
 
--(void)changeNowLanguage
-{
+-(void)changeNowLanguage {
+    
     if ([self.language isEqualToString:EN])
     {
         [self setNewLanguage:CNS];
@@ -129,13 +132,15 @@
     
     UINavigationController *rootNav = [storyBoard instantiateViewControllerWithIdentifier:@"rootnav"];
     
+    rootNav.tabBarItem.title = FGGetStringWithKeyFromTable(k_HomePage, k_BB_Table1);
+    
     UINavigationController *personNav = [storyBoard instantiateViewControllerWithIdentifier:@"personnav"];
+    
+    personNav.tabBarItem.title = FGGetStringWithKeyFromTable(k_Mine, k_BB_Table1);
     
     UITabBarController *tabVC = (UITabBarController*)appDelegate.window.rootViewController;
     
     tabVC.viewControllers = @[rootNav,personNav];
-    
-    [self postChangedLanguage];
     
 }
 
