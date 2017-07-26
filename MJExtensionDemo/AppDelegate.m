@@ -20,7 +20,8 @@
     
     NSLog(@"语言 : \n%@",  [[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"]);
     
-    [[LanguageManager sharedInstance] changeNowLanguage];
+    [[LanguageManager sharedInstance] resetRootViewController];
+    
     return YES;
     
 }

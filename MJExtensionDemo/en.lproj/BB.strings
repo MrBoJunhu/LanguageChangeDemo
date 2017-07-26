@@ -5,6 +5,7 @@
   Created by BillBo on 2017/7/25.
   Copyright © 2017年 BillBo. All rights reserved.
 */
+CFBundleDisplayName = "テストの国際化";
 "Add notification" = "Add Notification";
 "Remove notifications" = "Remove Notification";
 "Internationalization" = "Internationalization";

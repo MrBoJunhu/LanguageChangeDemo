@@ -41,8 +41,7 @@
 }
 
 
--(instancetype)init
-{
+-(instancetype)init {
     self = [super init];
     if (self)
     {
@@ -62,18 +61,18 @@
     if (!tmp)
     {
         tmp = CNS;
-    } else
-    {
-        tmp = EN;
     }
+//    else
+//    {
+//        tmp = EN;
+//    }
     
     self.language = tmp;
     path = [[NSBundle mainBundle]pathForResource:self.language ofType:LANGUAGE_FILE_TYPE];
     self.bundle = [NSBundle bundleWithPath:path];
 }
 
--(NSString *)getStringForKey:(NSString *)key withTable:(NSString *)table
-{
+-(NSString *)getStringForKey:(NSString *)key withTable:(NSString *)table {
     if (self.bundle)
     {
         return NSLocalizedStringFromTableInBundle(key, table, self.bundle, @"");
@@ -87,9 +86,8 @@
     if ([self.language isEqualToString:EN])
     {
         [self setNewLanguage:CNS];
-    }
-    else
-    {
+    
+    }else{
         [self setNewLanguage:EN];
     }
 }

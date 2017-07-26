@@ -51,4 +51,7 @@
  *  @param language 新语言
  */
 -(void)setNewLanguage:(NSString*)language;
+
+- (void)resetRootViewController;
+
 @end
