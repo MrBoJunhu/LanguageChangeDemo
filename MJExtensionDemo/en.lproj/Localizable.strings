@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  MJExtensionDemo
+
+  Created by BillBo on 2017/7/25.
+  Copyright © 2017年 BillBo. All rights reserved.
+*/
+"Add notification" = "Add";
+"Remove notifications" = "Remove";

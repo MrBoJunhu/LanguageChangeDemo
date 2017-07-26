@@ -1,0 +1,13 @@
+/* 
+  BB.strings
+  MJExtensionDemo
+
+  Created by BillBo on 2017/7/25.
+  Copyright © 2017年 BillBo. All rights reserved.
+*/
+"Add notification" = "Add Notification";
+"Remove notifications" = "Remove Notification";
+"Internationalization" = "Internationalization";
+"homepage" = "Homepage";
+"My" = "Mine";
+"switch language" = "switch language";

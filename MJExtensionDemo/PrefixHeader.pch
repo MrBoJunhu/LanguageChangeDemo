@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  MJExtensionDemo
+//
+//  Created by BillBo on 2017/7/24.
+//  Copyright © 2017年 BillBo. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "ConfirguationFile.h"
+#import "InternationalizationFile.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "ShowMessageObject.h"
+#import "LanguageManager.h"
+
+//弱引用
+#define weakify(x)autoreleasepool{} __weak typeof(x)weak##x=x;
+
+#endif /* PrefixHeader_pch */

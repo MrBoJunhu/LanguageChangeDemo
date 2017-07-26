@@ -1,0 +1,14 @@
+//
+//  StatusModel.m
+//  MJExtensionDemo
+//
+//  Created by BillBo on 2017/7/24.
+//  Copyright © 2017年 BillBo. All rights reserved.
+//
+
+#import "StatusModel.h"
+
+@implementation StatusModel
+
+
+@end
