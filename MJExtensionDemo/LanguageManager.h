@@ -19,7 +19,6 @@
 #define JAP @"ja"
 
 
-#define LANGUAGE_FILE_TYPE @"lproj"
 
 #define FGGetStringWithKeyFromTable(key, tbl) [[LanguageManager sharedInstance] getStringForKey:key withTable:tbl]
 

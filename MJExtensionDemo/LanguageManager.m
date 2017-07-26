@@ -10,6 +10,8 @@
 
 #import "AppDelegate.h"
 
+#define LANGUAGE_FILE_TYPE @"lproj"
+
 @interface LanguageManager()
 
 @property (nonatomic, copy) NSString *language;
@@ -52,14 +54,15 @@
 
 -(void)initLanguage
 {
-    NSString *tmp = [[NSUserDefaults standardUserDefaults]objectForKey:LANGUAGE_SET];
+    NSString *tmp = [[NSUserDefaults standardUserDefaults] objectForKey:LANGUAGE_SET];
+    
     NSString *path;
+    
     //默认是中文
     if (!tmp)
     {
         tmp = CNS;
-    }
-    else
+    } else
     {
         tmp = EN;
     }
