@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MJExtensionDemo_Widgets.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>MJWidgets.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>A51118401F259EE400C88BF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5A680071F29877100EE3BC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5A680211F298E7A00EE3BC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

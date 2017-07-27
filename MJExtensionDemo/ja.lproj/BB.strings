@@ -17,3 +17,5 @@ CFBundleDisplayName = "Test internationalization";
 "Japanese" = "日本語の";
 "Cancel" = "キャンセル";
 "图片1.jpg" = "图片1.jpg";
+"kind" = "分類";
+"shopping" = "ショッピングカート";

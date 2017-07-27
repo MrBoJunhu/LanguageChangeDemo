@@ -41,6 +41,15 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
 
+    //当App在后台的时候, 从手机Widget点击对应的模块触发事件
+    id  isFromWidgets = [[NSUserDefaultsManager shareNSUserDefaultsManager] groupUserDefaultsObjectForKeyWithSuiteName:groupID key:isFromWidgets_Key];
+
+    if (isFromWidgets) {
+        
+        [[LanguageManager sharedInstance] resetRootViewController];
+
+    }
+    
 }
 
 

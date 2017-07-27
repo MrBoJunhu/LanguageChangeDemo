@@ -9,6 +9,12 @@
 #ifndef InternationalizationFile_h
 #define InternationalizationFile_h
 
+//groupid
+#define selectedRow  @"selectedRow"
+#define groupID @"group.com.bill.MJExtensionDemo"
+#define isFromWidgets_Obj @"isFromWidgets_Obj"
+#define isFromWidgets_Key @"isFromWidgets_key"
+
 #define k_BB_Table1 @"BB"
 
 #define  k_Addnotification @"Add notification"
@@ -20,6 +26,10 @@
 #define k_Internationalization @"Internationalization"
 
 #define k_HomePage @"homepage"
+
+#define k_Kind @"kind"
+
+#define k_Shopping @"shopping"
 
 #define k_Mine @"My"
 

@@ -67,18 +67,9 @@
 
     
     [self InternationalizationFunctionWithLocalizable];
-    
-    [self changeTitle];
-   
+       
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeTitle) name:APPLANGUAGE_CHANGED object:nil];
     
-}
-
-
-- (void)changeTitle {
-    
-    self.title = FGGetStringWithKeyFromTable(k_HomePage, k_BB_Table1);
-
 }
 
 

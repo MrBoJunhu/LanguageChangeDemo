@@ -24,6 +24,11 @@
 		A53B905F1F26DC12009EC22E /* BB.strings in Resources */ = {isa = PBXBuildFile; fileRef = A53B90611F26DC12009EC22E /* BB.strings */; };
 		A53B906D1F26E759009EC22E /* ShowMessageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A53B906C1F26E759009EC22E /* ShowMessageObject.m */; };
 		A53B90701F26EA47009EC22E /* 图片1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A53B90721F26EA47009EC22E /* 图片1.jpg */; };
+		A5A680231F298E7A00EE3BC3 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A680091F29877100EE3BC3 /* NotificationCenter.framework */; };
+		A5A680271F298E7A00EE3BC3 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A680261F298E7A00EE3BC3 /* TodayViewController.m */; };
+		A5A6802A1F298E7A00EE3BC3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A680281F298E7A00EE3BC3 /* MainInterface.storyboard */; };
+		A5A6802E1F298E7A00EE3BC3 /* MJWidgets.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5A680221F298E7A00EE3BC3 /* MJWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5A680441F29B7EF00EE3BC3 /* NSUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A680431F29B7EF00EE3BC3 /* NSUserDefaultsManager.m */; };
 		A5A748B71F2726750073212E /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A748B61F2726750073212E /* NSBundle+Language.m */; };
 		A5A748BA1F2728EB0073212E /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A748B91F2728EB0073212E /* LanguageManager.m */; };
 		A5A748BD1F2735720073212E /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A748BC1F2735720073212E /* MineViewController.m */; };
@@ -44,7 +49,28 @@
 			remoteGlobalIDString = A511181C1F259EE300C88BF4;
 			remoteInfo = MJExtensionDemo;
 		};
+		A5A6802C1F298E7A00EE3BC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A51118151F259EE300C88BF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5A680211F298E7A00EE3BC3;
+			remoteInfo = MJWidgets;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5A680191F29877100EE3BC3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A5A6802E1F298E7A00EE3BC3 /* MJWidgets.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0AAAA014998C04C2BD1B38C0 /* libPods-MJExtensionDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MJExtensionDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +117,16 @@
 		A53B90711F26EA47009EC22E /* en */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = en; path = "en.lproj/图片1.jpg"; sourceTree = "<group>"; };
 		A53B90731F26EA49009EC22E /* ja */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ja; path = "ja.lproj/图片1.jpg"; sourceTree = "<group>"; };
 		A53B90741F26EA4A009EC22E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "zh-Hans"; path = "zh-Hans.lproj/图片1.jpg"; sourceTree = "<group>"; };
+		A5A680091F29877100EE3BC3 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A5A6801D1F298DFF00EE3BC3 /* MJExtensionDemo.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MJExtensionDemo.entitlements; sourceTree = "<group>"; };
+		A5A680221F298E7A00EE3BC3 /* MJWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MJWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A680251F298E7A00EE3BC3 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		A5A680261F298E7A00EE3BC3 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		A5A680291F298E7A00EE3BC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A5A6802B1F298E7A00EE3BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A680321F298EAE00EE3BC3 /* MJWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MJWidgets.entitlements; sourceTree = "<group>"; };
+		A5A680421F29B7EF00EE3BC3 /* NSUserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsManager.h; sourceTree = "<group>"; };
+		A5A680431F29B7EF00EE3BC3 /* NSUserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsManager.m; sourceTree = "<group>"; };
 		A5A748B51F2726750073212E /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		A5A748B61F2726750073212E /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		A5A748B81F2728EB0073212E /* LanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageManager.h; sourceTree = "<group>"; };
@@ -124,6 +160,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5A6801F1F298E7A00EE3BC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A680231F298E7A00EE3BC3 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -132,6 +176,7 @@
 			children = (
 				A53B903F1F25D266009EC22E /* UserNotifications.framework */,
 				0AAAA014998C04C2BD1B38C0 /* libPods-MJExtensionDemo.a */,
+				A5A680091F29877100EE3BC3 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,6 +196,7 @@
 				A511181F1F259EE300C88BF4 /* MJExtensionDemo */,
 				A51118391F259EE400C88BF4 /* MJExtensionDemoTests */,
 				A51118441F259EE400C88BF4 /* MJExtensionDemoUITests */,
+				A5A680241F298E7A00EE3BC3 /* MJWidgets */,
 				A511181E1F259EE300C88BF4 /* Products */,
 				9F1AF54807A60898830A4ED1 /* Pods */,
 				9ED6FDF020E69C55DA254FC5 /* Frameworks */,
@@ -163,6 +209,7 @@
 				A511181D1F259EE300C88BF4 /* MJExtensionDemo.app */,
 				A51118361F259EE400C88BF4 /* MJExtensionDemoTests.xctest */,
 				A51118411F259EE400C88BF4 /* MJExtensionDemoUITests.xctest */,
+				A5A680221F298E7A00EE3BC3 /* MJWidgets.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +217,8 @@
 		A511181F1F259EE300C88BF4 /* MJExtensionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A5A6801D1F298DFF00EE3BC3 /* MJExtensionDemo.entitlements */,
+				A5A6803E1F29B41600EE3BC3 /* 类目 */,
 				A5A748B01F2724AE0073212E /* APP内更改国际化 */,
 				A53B90721F26EA47009EC22E /* 图片1.jpg */,
 				A53B906B1F26E759009EC22E /* ShowMessageObject.h */,
@@ -225,6 +274,27 @@
 			path = MJExtensionDemoUITests;
 			sourceTree = "<group>";
 		};
+		A5A680241F298E7A00EE3BC3 /* MJWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				A5A680321F298EAE00EE3BC3 /* MJWidgets.entitlements */,
+				A5A680251F298E7A00EE3BC3 /* TodayViewController.h */,
+				A5A680261F298E7A00EE3BC3 /* TodayViewController.m */,
+				A5A680281F298E7A00EE3BC3 /* MainInterface.storyboard */,
+				A5A6802B1F298E7A00EE3BC3 /* Info.plist */,
+			);
+			path = MJWidgets;
+			sourceTree = "<group>";
+		};
+		A5A6803E1F29B41600EE3BC3 /* 类目 */ = {
+			isa = PBXGroup;
+			children = (
+				A5A680421F29B7EF00EE3BC3 /* NSUserDefaultsManager.h */,
+				A5A680431F29B7EF00EE3BC3 /* NSUserDefaultsManager.m */,
+			);
+			name = "类目";
+			sourceTree = "<group>";
+		};
 		A5A748B01F2724AE0073212E /* APP内更改国际化 */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,10 +319,12 @@
 				A511181B1F259EE300C88BF4 /* Resources */,
 				EFD8314E1C0AA2D5D3179532 /* [CP] Embed Pods Frameworks */,
 				25372B5B837DDFED3F619A7C /* [CP] Copy Pods Resources */,
+				A5A680191F29877100EE3BC3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A5A6802D1F298E7A00EE3BC3 /* PBXTargetDependency */,
 			);
 			name = MJExtensionDemo;
 			productName = MJExtensionDemo;
@@ -295,6 +367,23 @@
 			productReference = A51118411F259EE400C88BF4 /* MJExtensionDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A5A680211F298E7A00EE3BC3 /* MJWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A6802F1F298E7A00EE3BC3 /* Build configuration list for PBXNativeTarget "MJWidgets" */;
+			buildPhases = (
+				A5A6801E1F298E7A00EE3BC3 /* Sources */,
+				A5A6801F1F298E7A00EE3BC3 /* Frameworks */,
+				A5A680201F298E7A00EE3BC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJWidgets;
+			productName = MJWidgets;
+			productReference = A5A680221F298E7A00EE3BC3 /* MJWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -309,6 +398,9 @@
 						DevelopmentTeam = F8GY9XXT4N;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -325,6 +417,16 @@
 						DevelopmentTeam = F8GY9XXT4N;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A511181C1F259EE300C88BF4;
+					};
+					A5A680211F298E7A00EE3BC3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = F8GY9XXT4N;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -346,6 +448,7 @@
 				A511181C1F259EE300C88BF4 /* MJExtensionDemo */,
 				A51118351F259EE400C88BF4 /* MJExtensionDemoTests */,
 				A51118401F259EE400C88BF4 /* MJExtensionDemoUITests */,
+				A5A680211F298E7A00EE3BC3 /* MJWidgets */,
 			);
 		};
 /* End PBXProject section */
@@ -376,6 +479,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A680201F298E7A00EE3BC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A6802A1F298E7A00EE3BC3 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +552,7 @@
 				A51118281F259EE300C88BF4 /* ViewController.m in Sources */,
 				A53B906D1F26E759009EC22E /* ShowMessageObject.m in Sources */,
 				A5A748BD1F2735720073212E /* MineViewController.m in Sources */,
+				A5A680441F29B7EF00EE3BC3 /* NSUserDefaultsManager.m in Sources */,
 				A51118251F259EE300C88BF4 /* AppDelegate.m in Sources */,
 				A51118221F259EE300C88BF4 /* main.m in Sources */,
 			);
@@ -462,6 +574,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5A6801E1F298E7A00EE3BC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A680271F298E7A00EE3BC3 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -474,6 +594,11 @@
 			isa = PBXTargetDependency;
 			target = A511181C1F259EE300C88BF4 /* MJExtensionDemo */;
 			targetProxy = A51118421F259EE400C88BF4 /* PBXContainerItemProxy */;
+		};
+		A5A6802D1F298E7A00EE3BC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5A680211F298E7A00EE3BC3 /* MJWidgets */;
+			targetProxy = A5A6802C1F298E7A00EE3BC3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -536,6 +661,14 @@
 				A53B90741F26EA4A009EC22E /* zh-Hans */,
 			);
 			name = "图片1.jpg";
+			sourceTree = "<group>";
+		};
+		A5A680281F298E7A00EE3BC3 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A680291F298E7A00EE3BC3 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -638,11 +771,13 @@
 			baseConfigurationReference = 4ED82B708E445FDF53E3F9F9 /* Pods-MJExtensionDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MJExtensionDemo/MJExtensionDemo.entitlements;
 				DEVELOPMENT_TEAM = F8GY9XXT4N;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = MJExtensionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bill.MJExtensionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -654,11 +789,13 @@
 			baseConfigurationReference = CAF2FA57BD28EAEBD42C4FED /* Pods-MJExtensionDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MJExtensionDemo/MJExtensionDemo.entitlements;
 				DEVELOPMENT_TEAM = F8GY9XXT4N;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = MJExtensionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bill.MJExtensionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -715,6 +852,32 @@
 			};
 			name = Release;
 		};
+		A5A680301F298E7A00EE3BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MJWidgets/MJWidgets.entitlements;
+				DEVELOPMENT_TEAM = F8GY9XXT4N;
+				INFOPLIST_FILE = MJWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bill.MJExtensionDemo.MJWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A5A680311F298E7A00EE3BC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MJWidgets/MJWidgets.entitlements;
+				DEVELOPMENT_TEAM = F8GY9XXT4N;
+				INFOPLIST_FILE = MJWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bill.MJExtensionDemo.MJWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -753,6 +916,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A5A6802F1F298E7A00EE3BC3 /* Build configuration list for PBXNativeTarget "MJWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A680301F298E7A00EE3BC3 /* Debug */,
+				A5A680311F298E7A00EE3BC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

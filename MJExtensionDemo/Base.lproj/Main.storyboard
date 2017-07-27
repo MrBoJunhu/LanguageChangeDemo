@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -41,6 +40,8 @@
                     <connections>
                         <segue destination="wRe-O6-jqT" kind="relationship" relationship="viewControllers" id="yVe-Dq-zwg"/>
                         <segue destination="xhJ-wZ-ZCs" kind="relationship" relationship="viewControllers" id="f1b-GG-no1"/>
+                        <segue destination="k6V-Qz-FNs" kind="relationship" relationship="viewControllers" id="kso-YD-cWx"/>
+                        <segue destination="Smu-V9-l83" kind="relationship" relationship="viewControllers" id="XkD-Dp-H5J"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QT1-Go-Yha" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -152,10 +153,106 @@
             </objects>
             <point key="canvasLocation" x="-746" y="319"/>
         </scene>
+        <!--分类-->
+        <scene sceneID="naA-e5-l9S">
+            <objects>
+                <tableViewController id="9km-dZ-STa" userLabel="分类" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aGc-DY-kRX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iTQ-CK-f2W">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iTQ-CK-f2W" id="koa-5X-OLh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9km-dZ-STa" id="qnp-LB-Udo"/>
+                            <outlet property="delegate" destination="9km-dZ-STa" id="3rF-N2-Mgg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="vDP-bF-KLy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rah-H4-PWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="1011"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="6Pe-Xz-NlN">
+            <objects>
+                <tableViewController id="b3K-oN-FaW" userLabel="购物车" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TOP-Y8-oiN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1n1-SA-el7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1n1-SA-el7" id="gc1-9o-vDd">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="b3K-oN-FaW" id="h86-Vm-tZK"/>
+                            <outlet property="delegate" destination="b3K-oN-FaW" id="D5L-lr-qY4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="WNc-mQ-sn6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pP-k0-PiL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2735" y="1544"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="Uf0-1K-FZQ">
+            <objects>
+                <navigationController storyboardIdentifier="shoppingnav" id="Smu-V9-l83" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="购物车" image="购物车_未选中" selectedImage="购物车_选中" id="Jh5-sT-euH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="biN-v0-TRD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="b3K-oN-FaW" kind="relationship" relationship="rootViewController" id="BF2-xZ-ec6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6VG-hc-1OO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2735" y="690"/>
+        </scene>
+        <!--分类-->
+        <scene sceneID="Xp0-cp-Y4Q">
+            <objects>
+                <navigationController storyboardIdentifier="kindnav" id="k6V-Qz-FNs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="分类" image="分类_未选中" selectedImage="分类_选中" id="c5V-J0-hrB"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Fc-yH-zV9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9km-dZ-STa" kind="relationship" relationship="rootViewController" id="vJ1-c9-QcX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ae4-qL-t5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1543" y="955"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="分类_未选中" width="22" height="22"/>
+        <image name="分类_选中" width="22" height="22"/>
         <image name="我的_未选中" width="22" height="22"/>
         <image name="我的_选中" width="22" height="22"/>
+        <image name="购物车_未选中" width="22" height="22"/>
+        <image name="购物车_选中" width="22" height="22"/>
         <image name="首页_未选中" width="22" height="22"/>
         <image name="首页_选中" width="22" height="22"/>
     </resources>
