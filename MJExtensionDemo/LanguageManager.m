@@ -138,7 +138,30 @@
     
     UITabBarController *tabVC = (UITabBarController*)appDelegate.window.rootViewController;
     
-    tabVC.viewControllers = @[rootNav,personNav];
+    UINavigationController *shoppingNav = [storyBoard instantiateViewControllerWithIdentifier:@"shoppingnav"];
+    
+    shoppingNav.navigationItem.title = FGGetStringWithKeyFromTable(k_Shopping, k_BB_Table1);
+    shoppingNav.tabBarItem.title = FGGetStringWithKeyFromTable(k_Shopping, k_BB_Table1);
+    
+    
+    UINavigationController *kindNav = [storyBoard instantiateViewControllerWithIdentifier:@"kindnav"];
+    kindNav.navigationItem.title = FGGetStringWithKeyFromTable(k_Kind, k_BB_Table1);
+    kindNav.tabBarItem.title = FGGetStringWithKeyFromTable(k_Kind, k_BB_Table1);
+    
+    tabVC.viewControllers = @[rootNav,kindNav,shoppingNav, personNav];
+    
+    
+    id  isFromWidgets = [[NSUserDefaultsManager shareNSUserDefaultsManager] groupUserDefaultsObjectForKeyWithSuiteName:groupID key:isFromWidgets_Key];
+    
+    if (isFromWidgets) {
+        
+        id selectedIndex = [[NSUserDefaultsManager shareNSUserDefaultsManager]groupUserDefaultsObjectForKeyWithSuiteName:groupID key:selectedRow];
+        
+        tabVC.selectedIndex = [selectedIndex integerValue];
+        
+        [[NSUserDefaultsManager shareNSUserDefaultsManager] groupUserDefaultsRemoveObjectForKeyWithSuiteName:groupID key:isFromWidgets_Key];
+  
+    }
     
 }
 

@@ -19,10 +19,12 @@
 - (void)viewDidLoad {
    
     [super viewDidLoad];
-
-    [self changedLanguage];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changedLanguage) name:APPLANGUAGE_CHANGED object:nil];
+    NSString *rightItemTitle = FGGetStringWithKeyFromTable(k_ExchangeLanguage, k_BB_Table1);
+    
+    self.rightBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:rightItemTitle style:UIBarButtonItemStylePlain target:self action:@selector(changeLg)];
+    
+    self.navigationItem.rightBarButtonItem = self.rightBarButtonItem;
     
 }
 
@@ -30,18 +32,6 @@
     
     [super viewWillAppear:animated];
     
-}
-
-- (void)changedLanguage {
-  
-    self.title = FGGetStringWithKeyFromTable(k_Mine, k_BB_Table1);
-    
-    NSString *rightItemTitle = FGGetStringWithKeyFromTable(k_ExchangeLanguage, k_BB_Table1);
-    
-   self.rightBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:rightItemTitle style:UIBarButtonItemStylePlain target:self action:@selector(changeLg)];
-    
-    self.navigationItem.rightBarButtonItem = self.rightBarButtonItem;
-
 }
 
 - (void)changeLg {
@@ -64,7 +54,6 @@
             case 0:
             {
                 [[LanguageManager sharedInstance] setNewLanguage:CNS];
-
                 
             }
                 break;

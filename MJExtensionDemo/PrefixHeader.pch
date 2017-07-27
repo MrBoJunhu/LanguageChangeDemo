@@ -15,6 +15,7 @@
 #import <UIKit/UIKit.h>
 #import "ShowMessageObject.h"
 #import "LanguageManager.h"
+#import "NSUserDefaultsManager.h"
 
 //弱引用
 #define weakify(x)autoreleasepool{} __weak typeof(x)weak##x=x;

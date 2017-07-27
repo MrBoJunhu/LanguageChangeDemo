@@ -17,3 +17,5 @@ CFBundleDisplayName = "测试国际化";
 "Japanese" = "日文";
 "Cancel" = "取消";
 "图片1.jpg" = "图片1.jpg";
+"kind" = "分类";
+"shopping" = "购物车";
