@@ -156,7 +156,7 @@
         <!--分类-->
         <scene sceneID="naA-e5-l9S">
             <objects>
-                <tableViewController id="9km-dZ-STa" userLabel="分类" sceneMemberID="viewController">
+                <tableViewController id="9km-dZ-STa" userLabel="分类" customClass="KindTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aGc-DY-kRX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,7 @@
         <!--购物车-->
         <scene sceneID="6Pe-Xz-NlN">
             <objects>
-                <tableViewController id="b3K-oN-FaW" userLabel="购物车" sceneMemberID="viewController">
+                <tableViewController id="b3K-oN-FaW" userLabel="购物车" customClass="ShoppingTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="TOP-Y8-oiN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

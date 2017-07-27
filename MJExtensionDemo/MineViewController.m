@@ -20,6 +20,8 @@
    
     [super viewDidLoad];
     
+    self.navigationItem.title = FGGetStringWithKeyFromTable(k_Mine, k_BB_Table1);
+    
     NSString *rightItemTitle = FGGetStringWithKeyFromTable(k_ExchangeLanguage, k_BB_Table1);
     
     self.rightBarButtonItem  = [[UIBarButtonItem alloc] initWithTitle:rightItemTitle style:UIBarButtonItemStylePlain target:self action:@selector(changeLg)];

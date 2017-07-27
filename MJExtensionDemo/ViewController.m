@@ -30,6 +30,7 @@
     
     [super viewDidLoad];
     
+    self.navigationItem.title = FGGetStringWithKeyFromTable(k_HomePage, k_BB_Table1);
 
     NSDictionary *dict = @{
                            @"name" : @"Jack",

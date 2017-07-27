@@ -29,6 +29,10 @@
 		A5A6802A1F298E7A00EE3BC3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A680281F298E7A00EE3BC3 /* MainInterface.storyboard */; };
 		A5A6802E1F298E7A00EE3BC3 /* MJWidgets.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A5A680221F298E7A00EE3BC3 /* MJWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5A680441F29B7EF00EE3BC3 /* NSUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A680431F29B7EF00EE3BC3 /* NSUserDefaultsManager.m */; };
+		A5A680451F29CF4300EE3BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A511182C1F259EE300C88BF4 /* Assets.xcassets */; };
+		A5A680461F29D0C600EE3BC3 /* 图片1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A53B90721F26EA47009EC22E /* 图片1.jpg */; };
+		A5A6804C1F29D2C900EE3BC3 /* KindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A6804B1F29D2C900EE3BC3 /* KindTableViewController.m */; };
+		A5A6804F1F29D2E800EE3BC3 /* ShoppingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A6804E1F29D2E800EE3BC3 /* ShoppingTableViewController.m */; };
 		A5A748B71F2726750073212E /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A748B61F2726750073212E /* NSBundle+Language.m */; };
 		A5A748BA1F2728EB0073212E /* LanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A748B91F2728EB0073212E /* LanguageManager.m */; };
 		A5A748BD1F2735720073212E /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A748BC1F2735720073212E /* MineViewController.m */; };
@@ -127,6 +131,10 @@
 		A5A680321F298EAE00EE3BC3 /* MJWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MJWidgets.entitlements; sourceTree = "<group>"; };
 		A5A680421F29B7EF00EE3BC3 /* NSUserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsManager.h; sourceTree = "<group>"; };
 		A5A680431F29B7EF00EE3BC3 /* NSUserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsManager.m; sourceTree = "<group>"; };
+		A5A6804A1F29D2C900EE3BC3 /* KindTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KindTableViewController.h; sourceTree = "<group>"; };
+		A5A6804B1F29D2C900EE3BC3 /* KindTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KindTableViewController.m; sourceTree = "<group>"; };
+		A5A6804D1F29D2E800EE3BC3 /* ShoppingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingTableViewController.h; sourceTree = "<group>"; };
+		A5A6804E1F29D2E800EE3BC3 /* ShoppingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingTableViewController.m; sourceTree = "<group>"; };
 		A5A748B51F2726750073212E /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
 		A5A748B61F2726750073212E /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
 		A5A748B81F2728EB0073212E /* LanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageManager.h; sourceTree = "<group>"; };
@@ -233,6 +241,10 @@
 				A51118271F259EE300C88BF4 /* ViewController.m */,
 				A5A748BB1F2735720073212E /* MineViewController.h */,
 				A5A748BC1F2735720073212E /* MineViewController.m */,
+				A5A6804A1F29D2C900EE3BC3 /* KindTableViewController.h */,
+				A5A6804B1F29D2C900EE3BC3 /* KindTableViewController.m */,
+				A5A6804D1F29D2E800EE3BC3 /* ShoppingTableViewController.h */,
+				A5A6804E1F29D2E800EE3BC3 /* ShoppingTableViewController.m */,
 				A51118291F259EE300C88BF4 /* Main.storyboard */,
 				A511182C1F259EE300C88BF4 /* Assets.xcassets */,
 				A511182E1F259EE300C88BF4 /* LaunchScreen.storyboard */,
@@ -486,6 +498,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A680461F29D0C600EE3BC3 /* 图片1.jpg in Resources */,
+				A5A680451F29CF4300EE3BC3 /* Assets.xcassets in Resources */,
 				A5A6802A1F298E7A00EE3BC3 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,9 +566,11 @@
 				A51118281F259EE300C88BF4 /* ViewController.m in Sources */,
 				A53B906D1F26E759009EC22E /* ShowMessageObject.m in Sources */,
 				A5A748BD1F2735720073212E /* MineViewController.m in Sources */,
+				A5A6804C1F29D2C900EE3BC3 /* KindTableViewController.m in Sources */,
 				A5A680441F29B7EF00EE3BC3 /* NSUserDefaultsManager.m in Sources */,
 				A51118251F259EE300C88BF4 /* AppDelegate.m in Sources */,
 				A51118221F259EE300C88BF4 /* main.m in Sources */,
+				A5A6804F1F29D2E800EE3BC3 /* ShoppingTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -924,6 +940,7 @@
 				A5A680311F298E7A00EE3BC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

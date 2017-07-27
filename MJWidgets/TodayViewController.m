@@ -27,12 +27,12 @@
 - (void)viewDidLoad {
   
     [super viewDidLoad];
-
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    self.titlesArray = @[@"主页",@"分类",@"购物车",@"我的"];
+   
+    self.titlesArray = @[@"首页",@"分类",@"购物车",@"我的"];
     
     self.myTBV.delegate = self;
+    
+    self.myTBV.backgroundColor = [UIColor clearColor];
     
     self.myTBV.dataSource = self;
     
@@ -46,20 +46,25 @@
     
 }
 
-
-
 #pragma mark - 展示 widgets 折叠收起
+
 - (void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
     
     // Widgets 设置默认为"展开"
+    
     self.displlayModel = NCWidgetDisplayModeExpanded;
+    
     self.extensionContext.widgetLargestAvailableDisplayMode = self.displlayModel;
+    
     CGFloat screen_Width = [UIScreen mainScreen].bounds.size.width;
+    
     self.preferredContentSize = CGSizeMake(screen_Width, max_Height);
     
 }
+
+
 
 #pragma mark - 点击"展开" "折叠效果"
 
@@ -80,8 +85,6 @@
         self.preferredContentSize = CGSizeMake(screen_Width, max_Height);
 
     }
-
-    
     
 }
 
@@ -113,9 +116,24 @@
     
     }
     
+//    CAGradientLayer *caLayer = [[CAGradientLayer alloc] init];
+//    
+//    caLayer.colors = @[(__bridge id)[UIColor purpleColor].CGColor,(__bridge id)[UIColor redColor].CGColor, (__bridge id)[UIColor orangeColor].CGColor, (__bridge id)[UIColor greenColor].CGColor, (__bridge id)[UIColor whiteColor].CGColor];
+//    
+//    caLayer.locations = @[@0.1,@0.2,@0.5,@1.0];
+//    
+//    caLayer.startPoint = CGPointMake(0, 0);
+//    
+//    caLayer.endPoint = CGPointMake(1.0, 0);
+//    
+//    caLayer.frame = CGRectMake(0, 0, cell.contentView.frame.size.width, cell.contentView.frame.size.height);
+//    
+//    [cell.contentView.layer addSublayer:caLayer];
+
+    
     cell.textLabel.text = self.titlesArray[indexPath.row];
     
-    cell.imageView.image = [UIImage imageNamed:@"图片1.jpg"];
+    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@_选中", self.titlesArray[indexPath.row]]];
     
     return cell;
     
