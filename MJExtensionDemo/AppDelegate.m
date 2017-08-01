@@ -22,7 +22,7 @@
     
     [[LanguageManager sharedInstance] resetRootViewController];
     
-    [[UITabBar appearance] setTintColor:[UIColor redColor]];
+    [[UITabBar appearance] setTintColor:UIColorFromRGB1(253, 144, 53)];
     
     return YES;
     

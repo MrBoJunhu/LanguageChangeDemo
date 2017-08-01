@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-//两个Target之间头文件的引用
+//两个Target之间头文件的引用,公用的宏定义,但是类不可以由此调用
 #import "PrefixHeader.pch"
 
 @interface TodayViewController : UIViewController

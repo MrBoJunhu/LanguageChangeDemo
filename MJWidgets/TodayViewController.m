@@ -37,7 +37,7 @@
     self.myTBV.dataSource = self;
     
     self.myTBV.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
